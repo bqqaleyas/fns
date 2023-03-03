@@ -197,36 +197,7 @@
     public = yes
     force create mode = 0777
     force directory mode = 0777
-[common_uch]
-    path = /home/share/common_uch
-    browseable = yes
-    guest = ok
-    read only = no
-    creat mask = 0777
-    directory mask = 0777
-    public =yes
-    
-
-# Un-comment the following and create the netlogon directory for Domain Logons
-# (you need to configure Samba to act as a domain controller too.)
-;[netlogon]
-;   comment = Network Logon Service
-;   path = /home/samba/netlogon
-;   guest ok = yes
-;   read only = yes
-
-# Un-comment the following and create the profiles directory to store
-# users profiles (see the "logon path" option above)
-# (you need to configure Samba to act as a domain controller too.)
-# The path below should be writable by all users so that their
-# profile directory may be created the first time they log on
-;[profiles]
-;   comment = Users profiles
-;   path = /home/samba/profiles
-;   guest ok = no
-;   browseable = no
-;   create mask = 0600
-;   directory mask = 0700
+[common_uch]   comm
 
 [printers]
    comment = All Printers
